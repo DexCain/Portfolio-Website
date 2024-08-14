@@ -1,0 +1,63 @@
+
+/* Globals */
+:root {
+
+
+    scroll-behavior: smooth;
+}
+
+
+/* MAIN PAGE STYLING */
+main {
+    margin-left: 12%;
+}
+
+.main-content-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 50%;
+}
+
+.main-content-container * {
+    width: fit-content;
+}
+
+
+/* MOBILE HEADER */
+
+/* header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
+
+
+/* LEFT SIDE NAV */
+
+aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 3em 1em 1em 1em;
+    height: 100%;
+    width: 16rem;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
