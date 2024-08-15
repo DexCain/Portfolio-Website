@@ -128,6 +128,13 @@ nav a:hover {
     background-position: center;
     background-size: cover;
     border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.nav-img-container a:hover {
+    transform: scale(1.2) rotate(360deg);
+    
+
 }
 
 .nav-container nav {
