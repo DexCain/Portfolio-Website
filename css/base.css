@@ -151,7 +151,7 @@ nav a:hover {
 }
 
 .nav-img-container a:hover {
-    transform: scale(1.2) rotate(360deg);
+    transform: scale(1.2);
     
 
 }
@@ -450,11 +450,6 @@ h4 {
     .main-content-container {
         max-width: 90%;
     }
-
-    main {
-
-    }
-
 
     .body-text {
         font-size: .9rem;
