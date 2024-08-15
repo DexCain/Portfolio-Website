@@ -44,6 +44,9 @@ body{
     background-color: var(--primary);
 }
 
+header {
+    display: none;
+}
 /* MAIN PAGE STYLING */
 main {
     margin-left: 12%;
@@ -302,4 +305,22 @@ h3 {
 .socials-end-container svg:hover {
     fill: var(--secondary-background);
     transform: scale(1.2);
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1200px){
+    main {
+        margin-left: 15%;
+    }
+
+    .proj-container {
+        display: block;
+        margin-bottom: 4rem;
+    }
+    
+    .proj-img-container {
+        margin-bottom: 2rem;
+    }
 }
