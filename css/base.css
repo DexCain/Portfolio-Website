@@ -38,6 +38,11 @@ margin: 1rem 0 .8rem 1rem;
 padding: 0;
 }
 
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
 
 section,
 #hero-text {
@@ -86,6 +91,10 @@ header {
     background-color: var(--secondary-background);
     padding: 0 1em;
     z-index: 50;
+}
+
+header h3 {
+    color: var(--primary)
 }
 
 
@@ -178,7 +187,7 @@ h3 {
 
 /* Hero */
 
-#hero-text div {
+h4 {
     margin-bottom: .3rem;
     margin-left: 1rem;
     font-family: "Kalam", cursive;
@@ -288,6 +297,10 @@ h3 {
     gap: 1.5rem;
 }
 
+.socials-end-container {
+    margin-left: 1em;
+    margin-top: 1em;
+}
 .socials-nav-container svg,
 .socials-end-container svg {
     width: 35px;
@@ -328,8 +341,9 @@ h3 {
 
 .ham-bar {
     width: 70%;
-    height: 4px;
-    background-color: white;
+    height: 5px;
+    background-color: var(--accent-2);
+    border: 1px solid var(--accent);
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -383,7 +397,7 @@ h3 {
 
 @media (max-width: 990px) {
     main {
-        margin: 7rem auto 0 auto;
+        margin: 6.5rem auto 0 auto;
     }
 
     header {
@@ -408,6 +422,10 @@ h3 {
 }
 
 @media (max-width: 650px){
+    main {
+        margin-top: 4.5rem;
+    }
+
     aside {
         left: -100%;
         width: 100%;
@@ -425,14 +443,52 @@ h3 {
         font-size: 1.5rem;
     }
 
-    #hero-text div {
+    h4 {
         font-size: 1.1rem;
     }
+
+    .main-content-container {
+        max-width: 90%;
+    }
+
+    main {
+
+    }
+
 
     .body-text {
         font-size: .9rem;
     }
     .btn {
         font-size: .8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    main {
+        margin-top: 3.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: .8rem;
+    }
+
+    .body-text {
+        font-size: .7rem;
+    }
+    .btn {
+        font-size: .6rem;
     }
 }
