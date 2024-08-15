@@ -30,7 +30,7 @@ h3 {
 font-family: "Kalam", cursive;
 font-weight: 700;
 font-style: normal;
-margin: 1rem 0 0 1rem;
+margin: 1rem 0 .8rem 1rem;
 padding: 0;
 }
 
@@ -61,6 +61,10 @@ main {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+p {
+    line-height: 1.9;
 }
 
 /* MOBILE HEADER */
@@ -203,11 +207,16 @@ h3 {
     width: 100%;
     height: auto;
     margin: 0.5rem 0;
+    background-color: var(--accent-2);
 }
 
 .proj-img {
     aspect-ratio: 16/9;
-    background-color: blueviolet;
+    background-size: contain;
+}
+
+#proj-1 {
+    background-image: url(../img/Lifeguard-Site-Project-img.png);
 }
 
 .proj-technologies {
@@ -221,6 +230,7 @@ h3 {
     color: black;
     background-color: var(--muted-accent);
     box-shadow: 0 1.5px var(--secondary);
+    font-size: .8rem;
 }
 
 .btn {
