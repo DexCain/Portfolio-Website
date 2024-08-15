@@ -18,6 +18,10 @@
         "wdth" 100;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .nav-container .nav-content, nav {
     font-family: "Kalam", cursive;
     font-weight: 400;
@@ -44,9 +48,7 @@ body{
     background-color: var(--primary);
 }
 
-header {
-    display: none;
-}
+
 /* MAIN PAGE STYLING */
 main {
     margin-left: 12%;
@@ -72,14 +74,19 @@ p {
 
 /* MOBILE HEADER */
 
-/* header {
-    display: flex;
+/* Only used when width is 990px or less */
+header {
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-} */
+    background-color: var(--secondary-background);
+    padding: 0 1em;
+    z-index: 50;
+}
 
 
 /* LEFT SIDE NAV */
@@ -308,6 +315,55 @@ h3 {
 }
 
 
+/* Hamburger Menu (only used for small VP */
+
+.hamburger-menu {
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.ham-bar {
+    width: 70%;
+    height: 4px;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s ease, opacity .8s ease, top .6s ease;
+}
+
+.bar-top {
+    top :25%;
+}
+
+.bar-bot {
+    top: 75%;
+}
+
+.hamburger-menu.active .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+}
+
+.hamburger-menu.active .bar-mid {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar-bot {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+}
+
+.head-end-spacer{
+    height: 50px;
+    width: 50px;
+}
 /* Media Queries */
 
 @media (max-width: 1200px){
@@ -322,5 +378,31 @@ h3 {
     
     .proj-img-container {
         margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 990px) {
+    main {
+        margin: 7rem auto 0 auto;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    aside {
+        left: -50%;
+        width: 50%;
+        transition: left .5s ease;
+    }
+
+    aside.active {
+        left: 0;
+    }
+
+    .nav-img-container {
+        padding-top: 8rem;
     }
 }
