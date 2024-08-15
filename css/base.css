@@ -79,6 +79,11 @@ aside{
 
 nav a {
     color: black;
+    border-radius: 12px;
+}
+
+nav a:hover {
+    background-color: red;;
 }
 
 .nav-img-container {
@@ -182,15 +187,15 @@ nav a {
 
 /* MISC */
 
-.section-square-container {
+.header-square-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .section-square {
     width: 10px;
     height: 10px;
-    margin-bottom: 3rem;
     margin-right: .5rem;
     background-color: aquamarine;
     rotate: 10deg;
