@@ -1,11 +1,27 @@
 
 /* Globals */
 :root {
-
-
     scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
+.nav-container .nav-content, nav {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
 
 /* MAIN PAGE STYLING */
 main {
@@ -17,13 +33,14 @@ main {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    max-width: 50%;
+    max-width: 70%;
 }
 
-.main-content-container * {
-    width: fit-content;
-}
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* MOBILE HEADER */
 
@@ -62,7 +79,6 @@ aside{
 
 nav a {
     color: black;
-    text-decoration: none;
 }
 
 .nav-img-container {
@@ -95,4 +111,87 @@ nav a {
     display: flex;
     justify-content: center;
     margin: auto 1em 1em 1em;
+}
+
+
+/* PROJECTS */
+.proj-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.proj-container {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.proj-text h3 {
+    margin: 0;
+}
+
+.proj-container:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.proj-img-container,
+.proj-text {
+    flex-basis: 50%;
+}
+
+.proj-img-container {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem 0;
+}
+
+.proj-img {
+    aspect-ratio: 16/9;
+    background-color: blueviolet;
+}
+
+.proj-technologies {
+    margin-bottom: 0.5rem;
+}
+
+.proj-technologies span {
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    color: green;
+    background-color: bisque;
+    box-shadow: 0 1.5px yellow;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color:rgb(149, 255, 20);
+    background-color: fuchsia;
+    box-shadow: 0 2px rgb(179, 5, 179);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(179, 5, 179);
+}
+
+/* MISC */
+
+.section-square-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-square {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 3rem;
+    margin-right: .5rem;
+    background-color: aquamarine;
+    rotate: 10deg;
 }

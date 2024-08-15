@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/base.css">
     <title>Declan Cain</title>
 </head>
@@ -15,13 +18,13 @@
                     <a><div></div></a>
                 </div>
 
-                <nav>
+                <nav class="kalam-regular">
 
                     <a href="#about">About</a>
 
                     <a href="#projects">Projects</a>
 
-                    <a href="Contact">Contact</a>
+                    <a href="#contact">Contact</a>
 
                     <a href="#">Classes</a>
 
@@ -49,21 +52,30 @@
 
     <main>
         <div class="main-content-container">
-            <h1>
-                Hello, I'm Declan.
-            </h1>
+            <div id="hero-text">
+                <h1>
+                    Hi, I'm Declan Cain
+                </h1>
+                <p>Computer Science and Mathematics Major</p>
+                <p>University of Wisconsin-Madison</p>
+            </div>
 
             <section id="about">
+                <!-- <div class="section-square-container">
+                    <div class="section-square"></div>
+                    <div class="section-square"></div>
+                    <div class="section-square"></div>
+                </div> -->
                 <h2>
                     About Me
                 </h2>
 
-                <p>
+                <p class="body-text">
                     I am an undergraduate student here at the university of Wisconsin, Madison where I am double majoring in Computer Science and AMthe
 
                 </p>
 
-                <p>
+                <p class="body-text">
                     More About Me
                 </p>
             </section>
@@ -71,18 +83,65 @@
 
             <section id="projects">
                 <h2>
-                    Recent Projects
+                    My Projects
                 </h2>
+                <article class="proj-container">
+                    <div class="proj-img-container">
+                        <div class="proj-img"></div>
+                    </div>
+                    <div class="proj-text">
+                        <h3>TITLE</h3>
+                        <div class="proj-technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <p class="body-text">ABOUT THE PROJECT</p>
+                        <div class="proj-links">
+                            <a href="#" class="btn">Live Site</a>
+                            <a href="#" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="proj-container">
+                    <div class="proj-img-container">
+                        <div class="proj-img"></div>
+                    </div>
+                    <div class="proj-text">
+                        <h3>TITLE</h3>
+                        <div class="proj-technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <p class="body-text">ABOUT THE PROJECT</p>
+                        <div class="proj-links">
+                            <a href="#" class="btn">Live Site</a>
+                            <a href="#" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="projects-grid-container">
+                <article class="proj-container">
+                    <div class="proj-img-container">
+                        <div class="proj-img"></div>
+                    </div>
+                    <div class="proj-text">
+                        <h3>TITLE</h3>
+                        <div class="proj-technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <p class="body-text">ABOUT THE PROJECTABOUT THE PROJECTABOUT THE PROJECTABOUT THE PROJECTABOUT THE PROJECTABOUT THE PROJECTABOUT THE PROJECTABOUT THE PROJECTABOUT THE PROJECT</p>
+                        <div class="proj-links">
+                            <a href="#" class="btn">Live Site</a>
+                            <a href="#" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                </article>
 
-                    Grid container
-                </div>
-
-                <button>
-                    All Projects
-                </button>
             </section>
 
             <section id="contact">
